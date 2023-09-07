@@ -3,7 +3,7 @@ const bodyParser = require("body-parser")
 
 const app = express();
 app.set('view engine', 'ejs');
-const port = 3000
+const port =  process.env.port|| 3000
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static("public/geometric-calculators"));
